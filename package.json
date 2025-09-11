@@ -1,0 +1,19 @@
+{
+  "name": "home-work",
+  "version": "1.0.0",
+  "description": "",
+  "main": "HomeWork1.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "npx eslint *.js ./*.js ./**/*.js",
+     "lint:fix": "npx eslint *.js ./*.js ./**/*.js --fix"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@eslint/js": "^9.35.0",
+    "eslint": "^9.35.0",
+    "globals": "^16.4.0"
+  }
+}
