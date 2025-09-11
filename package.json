@@ -5,6 +5,7 @@
   "main": "HomeWork1.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "node index.js",
     "lint": "npx eslint *.js ./*.js ./**/*.js",
      "lint:fix": "npx eslint *.js ./*.js ./**/*.js --fix"
   },
