@@ -1,5 +1,6 @@
 const { buyProduct } = require("./lib/menu");
 const { question, exiting } = require("./lib/question/index");
+const {cart} = require("./lib/cart")
 
 async function menuUtama() {
   console.log("Selamat datang di Pizza Hut, Silahkan pilih menu: ")
@@ -18,8 +19,7 @@ async function menuUtama() {
     buyProduct()
       break;
     case 2:
-      console.log("lihat cart")
-      exiting()
+      cart()
       break;
     case 3:
       console.log("lihat history");
