@@ -16,10 +16,12 @@ async function menuUtama() {
 
   switch (inputMenu) {
     case 1:
-    buyProduct()
+    await buyProduct()
+    await menuUtama()
       break;
     case 2:
-      cart()
+      await cart()
+      await menuUtama()
       break;
     case 3:
       console.log("lihat history");
