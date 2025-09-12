@@ -1,3 +1,4 @@
+const { buyProduct } = require("./lib/menu");
 const { question, exiting } = require("./lib/question/index");
 
 async function menuUtama() {
@@ -14,8 +15,7 @@ async function menuUtama() {
 
   switch (inputMenu) {
     case 1:
-      console.log("Lihat menu");
-      exiting();
+    buyProduct()
       break;
     case 2:
       console.log("lihat keranjang");
