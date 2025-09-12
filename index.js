@@ -18,8 +18,8 @@ async function menuUtama() {
     buyProduct()
       break;
     case 2:
-      console.log("lihat keranjang");
-      exiting();
+      console.log("lihat cart")
+      exiting()
       break;
     case 3:
       console.log("lihat history");
@@ -36,4 +36,4 @@ async function menuUtama() {
   }
 }
 
-menuUtama();
+menuUtama()
