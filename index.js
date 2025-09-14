@@ -2,6 +2,7 @@ const { buyProduct } = require("./lib/menu");
 const { question, exiting } = require("./lib/question/index");
 const {cart} = require("./lib/cart")
 const {history} = require("./lib/history")
+const { customError } = require("./lib/error/index")
 
 async function menuUtama() {
   console.log("Selamat datang di Pizza Hut, Silahkan pilih menu: ")
@@ -33,9 +34,7 @@ async function menuUtama() {
       exiting();
       break;
     default:
-      console.log("menu tidak ada");
-      exiting();
-      break;
+    throw new customError("Menu yang di masukan tidak ada")
   }
 }
 
